@@ -1,21 +1,28 @@
 "use client";
 
-import { useState, useEffect } from 'react';
-import { 
-  Users, Clock, BarChart3, Bell, Pause, Play, RefreshCw, 
-  AlertTriangle, CheckCircle, History, TrendingUp, TrendingDown, X 
-} from 'lucide-react';
-import { Line } from 'react-chartjs-2';
 import {
-  Chart as ChartJS,
   CategoryScale,
+  Chart as ChartJS,
+  Legend,
   LinearScale,
-  PointElement,
   LineElement,
+  PointElement,
   Title,
   Tooltip,
-  Legend,
 } from 'chart.js';
+import {
+  AlertTriangle,
+  BarChart3, Bell,
+  CheckCircle,
+  Clock,
+  History,
+  Pause, Play, RefreshCw,
+  TrendingUp,
+  Users,
+  X
+} from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { Line } from 'react-chartjs-2';
 import styles from './styles.module.css';
 
 ChartJS.register(
